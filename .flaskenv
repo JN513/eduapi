@@ -1,0 +1,2 @@
+FLASK_APP=alterfrotas.py
+FLASK_ENV=development
