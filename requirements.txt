@@ -1,9 +1,13 @@
+asn1crypto==1.4.0
 click==7.1.2
 Flask==1.1.2
 Flask-SQLAlchemy==2.5.1
 greenlet==1.0.0
+gunicorn==20.1.0
 itsdangerous==1.1.0
 Jinja2==2.11.3
 MarkupSafe==1.1.1
+pg8000==1.19.2
+scramp==1.4.0
 SQLAlchemy==1.4.7
 Werkzeug==1.0.1
