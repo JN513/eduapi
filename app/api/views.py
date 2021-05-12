@@ -20,7 +20,7 @@ def schools():
 
     if tipo != "all":
         escolas = escolas.filter_by(tipo=tipo)
-    
+
     if cep != "all":
         escolas = escolas.filter_by(cep=cep)
 
@@ -28,7 +28,7 @@ def schools():
 
     if uf != "all":
         escolas = escolas.filter_by(uf=uf)
-    
+
     if cidade != "all":
         escolas = escolas.filter_by(cidade=cidade)
 

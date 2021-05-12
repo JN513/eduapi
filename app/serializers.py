@@ -2,6 +2,7 @@ from marshmallow_sqlalchemy.schema import load_instance_mixin
 from app import ma
 from app.models import User, School
 
+
 class SchoolSchema(ma.SQLAlchemySchema):
     class Meta:
         model = School
