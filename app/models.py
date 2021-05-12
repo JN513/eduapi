@@ -76,7 +76,8 @@ class School(db.Model):
     __tablename__ = "school"
 
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(150), index=True)
+    nome = db.Column(db.String(150), index=True)
+    tipo = db.Column(db.String(40))
     telefone = db.Column(db.String(12))
     email = db.Column(db.String(60))
     logradouro = db.Column(db.String(120))
