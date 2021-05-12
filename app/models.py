@@ -14,7 +14,7 @@ class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(60), index=True, unique=True)
     first_name = db.Column(db.String(40), index=True)
-    last_name = db.Column(db.String(40), index=True)
+    last_name = db.Column(db.String(40))
     password = db.Column(db.String(128))
     email_confirmed = db.Column(db.Datetime, default=None)
     date_joined = db.Column(db.DateTime, default=datetime.utcnow)
@@ -76,4 +76,12 @@ class School(db.Model):
     __tablename__ = "school"
 
     id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(150), index=True)
+    telefone = db.Column(db.String(12))
+    email = db.Column(db.String(60))
+    logradouro = db.Column(db.String(120))
+    bairro = db.Column(db.String(50))
+    cidade = db.Column(db.String(70))
+    uf = db.Column(db.String(10))
+    cep = db.Column(db.String(9))
     created_in = db.Column(db.DateTime, default=datetime.utcnow)
