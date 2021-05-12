@@ -32,4 +32,6 @@ def create_app(config_class=Config):
 
     app.register_blueprint(auth_blueprint)
 
+    from app import views, models
+
     return app
