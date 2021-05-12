@@ -16,7 +16,7 @@ class User(UserMixin, db.Model):
     first_name = db.Column(db.String(40), index=True)
     last_name = db.Column(db.String(40))
     password = db.Column(db.String(128))
-    email_confirmed = db.Column(db.Datetime, default=None)
+    email_confirmed = db.Column(db.DateTime, default=None)
     date_joined = db.Column(db.DateTime, default=datetime.utcnow)
 
     def get_full_name(self):
